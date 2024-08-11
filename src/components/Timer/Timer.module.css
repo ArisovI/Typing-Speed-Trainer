@@ -1,0 +1,12 @@
+.timer {
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+  border-radius: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.time-up {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  font-size: 18px;
+}

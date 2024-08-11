@@ -1,0 +1,18 @@
+.text-input {
+  background: 0;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #e6f7ff;
+  padding: 10px 20px;
+  width: 300px;
+  height: 50px;
+  color: #e6f7ff;
+
+  font-size: 22px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.text-input::placeholder{
+  color: #e6f7ff;
+}

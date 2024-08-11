@@ -1,0 +1,19 @@
+.time-select {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.label {
+  font-size: 22px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #e6f7ff;
+}
+
+.select {
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  outline: 0;
+}

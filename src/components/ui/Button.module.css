@@ -1,0 +1,12 @@
+.custom-btn {
+  padding: 20px 50px;
+  border-radius: 8px;
+  border: 0;
+  box-shadow: 0 0 5px white;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #002766;
+}

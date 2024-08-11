@@ -1,0 +1,21 @@
+.statistics {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  width: 800px;
+  height: 400px;
+  background: #bae7ff;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.statistics > p {
+  font-size: 24px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #002766;
+  font-weight: 700;
+}
