@@ -1,12 +1,13 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const texts = [
-  "This is a typing speed test.",
-  "The quick brown fox jumps over the lazy dog.",
-  "Pack my box with five dozen liquor jugs.",
-  "How razorback-jumping frogs can level six piqued gymnasts!",
-  "Crazy Fredrick bought many very exquisite opal jewels.",
+  "1 random random random",
+  "2 random random random",
+  "3 random random random",
+  "4 random random random",
+  "5 random random random",
 ];
+
 const randomText = () => {
   const index = Math.floor(Math.random() * texts.length);
   return texts[index];
@@ -36,19 +37,16 @@ const typingSlice = createSlice({
           state.isGameOver = true;
         }
 
-        // Count errors
         state.errors = action.payload
           .split("")
           .filter((char, index) => char !== state.text[index]).length;
 
-        // Start the timer on the first input
         if (!state.startTime && action.payload.length === 1) {
           state.startTime = new Date().getTime();
         }
 
-        // Calculate WPM
         if (state.startTime) {
-          const timeElapsed = (new Date().getTime() - state.startTime) / 60000; // Time in minutes
+          const timeElapsed = (new Date().getTime() - state.startTime) / 60000;
           state.wpm = Math.round(action.payload.length / 5 / timeElapsed);
         }
       }
@@ -71,8 +69,8 @@ const typingSlice = createSlice({
       if (state.timeRemaining > 1) {
         state.timeRemaining -= 1;
       } else {
-        state.isGameOver = true; // Stop the game
-        state.isStarted = false; // Stop the game when time is up
+        state.isGameOver = true;
+        state.isStarted = false;
       }
     },
     startTest: (state) => {

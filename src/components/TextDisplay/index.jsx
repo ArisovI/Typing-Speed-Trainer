@@ -2,7 +2,7 @@ import styles from "./TextDisplay.module.css";
 
 export const TextDisplay = ({ text, userInput }) => {
   return (
-    <div>
+    <div className={styles["text-display"]}>
       {text.split("").map((char, index) => {
         let color;
         if (index < userInput.length) {
@@ -10,7 +10,6 @@ export const TextDisplay = ({ text, userInput }) => {
         }
         return (
           <span
-            className={styles["text-display"]}
             key={index}
             style={{
               color: color,

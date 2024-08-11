@@ -1,8 +1,15 @@
-.text-display {
+.text-display > span {
   font-size: 22px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   word-spacing: 10px;
   font-weight: 500;
   font-weight: 700;
   color: white;
+}
+
+@media (max-width: 768px) {
+  .text-display {
+    max-width: 450px;
+    padding: 10px 20px;
+  }
 }

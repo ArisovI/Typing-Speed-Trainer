@@ -5,8 +5,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { setUserInput, resetTest, startTest } from "./store/typingSlice.js";
 import { TimeSelect } from "./components/TimeSelect";
 import { Timer } from "./components/Timer";
-import styles from "./App.module.css";
 import { Button } from "./components/ui/Button";
+import styles from "./App.module.css";
 
 export const App = () => {
   const dispatch = useDispatch();
